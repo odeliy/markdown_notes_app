@@ -16,7 +16,7 @@ This is also the first time I've persisted data using localStorage methods. With
 
 ## Deployment
 
-Deployed with [netlify] (https://celebrated-buttercream-5795b3.netlify.app/)
+Deployed with [netlify](https://celebrated-buttercream-5795b3.netlify.app/)
 
 ## Get started
 
