@@ -1,7 +1,6 @@
 import React from "react";
 import Sidebar from "./components/Sidebar";
 import Editor from "./components/Editor";
-import { data } from "./data.js";
 import Split from "react-split";
 import { nanoid } from "nanoid";
 
@@ -62,7 +61,7 @@ export default function App() {
   function deleteNote(event, noteId) {
     event.stopPropagation();
     // console.log("deleted", noteId);
-    setNotes((oldNotes) => oldNotes.filter((note) => note.id != noteId));
+    setNotes((oldNotes) => oldNotes.filter((note) => note.id !== noteId));
   }
 
   return (
@@ -83,7 +82,15 @@ export default function App() {
       ) : (
         <div className="no-notes">
           <h1>Notes App</h1>
-          <p>Notes are stored in local storage on your browser.</p>
+          <p className="intro">
+            Notes are stored in local storage. This app makes use of a couple
+            fancy node packages. Namely,{" "}
+            <a href="https://github.com/andrerpena/react-mde#readme">
+              react-mde
+            </a>{" "}
+            for the markdown editor and{" "}
+            <a href="https://split.js.org/">react-split</a>.
+          </p>
           <button className="first-note" onClick={createNewNote}>
             Create one now
           </button>
