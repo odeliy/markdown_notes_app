@@ -4,9 +4,9 @@ A webapp I built to play with markdown syntax, constructed with create-react-app
 
 ## Lessons Learned
 
-My first project using a lot extra packages, learning more about npm, and understanding how to read the package.json file. This opened up a whole new world to me about how to effectively use libraries to get polished results quickly.
+My first project using a lot of extra packages, learning more about npm, and understanding how to read the package.json file. This opened up a whole new world to me about how to effectively use libraries to get polished results quickly.
 
-This is also the first time I've persisted data using localStorage methods. With this came the small complication of using JSON.parse and JSON.stringify to "talk" to the local storage. I also learned about lazy state initialization and why it would be bad to set the initial state to an "expensive" function.
+This is also the first time I've persisted data using localStorage methods. I used JSON.parse and JSON.stringify to "talk" to the local storage. I also learned about lazy state initialization and why it would be bad to set the initial state to an "expensive" function.
 
 ## Potential Future Features
 
