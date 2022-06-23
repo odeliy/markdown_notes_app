@@ -132,11 +132,16 @@ button:focus {
 .no-notes {
   width: 100%;
   height: 100vh;
+  padding: 0 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: whitesmoke;
+}
+
+.no-notes .intro {
+  max-width: 380px;
 }
 
 .no-notes h1 {
